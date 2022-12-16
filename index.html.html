@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin: 24px 0;
+      animation: wave 5s ease infinite;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .subtitle {
+      font-size: 18px;
+      text-align: center;
+      margin: 8px 0;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 16px 0;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 16px;
+      transition: transform 0.2s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .photo:hover {
+      transform: translateY(-8px);
+    }
+
+    .description {
+      font-size: 14px;
+      text-align: center;
+      margin: 4px 0;
+    }
+
+    .central-image {
+      width: 80%;
+      height: auto;
+      margin: 16px 0;
+    }
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">COMPITI GIONRALIERI CLASSE 3°A</div>
+    <div class="subtitle">ecco i compiti per domani, fatene buon uso ;)</div>
+    <div class="photos">
+      <div class="photo-container">
+        <img src="photo1.jpg" class="photo">
+        <div class="description">ARTE</div>
+      </div>
+      <div class="photo-container">
+        <img src="photo2.jpg" class="photo">
+        <div class="description">INGLESE</div>
+      </div>
+      <div class="photo-container">
+        <img src="photo3.jpg" class="photo">
+        <div class="description">FRANCESE VA STUDIATA</div>
+      </div>
+
+	 </div>
+    <img src="central-image.jpg" class="central-image">
+  </div>
+</body>
+</html>
+
